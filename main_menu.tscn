@@ -1,0 +1,193 @@
+[gd_scene load_steps=9 format=3 uid="uid://8ebwdha5lb3s"]
+
+[ext_resource type="Texture2D" uid="uid://bjr3h0vds8d4v" path="res://assets/Screenshot 2025-08-03 at 4.00.21 PM.png" id="1_7vrkn"]
+[ext_resource type="Script" uid="uid://d3wao77bhycu7" path="res://main_menu.gd" id="1_fu7sn"]
+[ext_resource type="FontFile" uid="uid://d3vd82mkw7oam" path="res://assets/Break Mind.otf" id="2_fu7sn"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7vrkn"]
+texture = ExtResource("1_7vrkn")
+modulate_color = Color(0.2757, 0.2757, 0.2757, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jix8l"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7vrkn"]
+bg_color = Color(6.61798e-08, 0.127365, 0.215636, 1)
+border_color = Color(0.200187, 0.171884, 0.00575288, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fu7sn"]
+bg_color = Color(6.01634e-09, 0.0610067, 0.13376, 1)
+border_color = Color(0.200187, 0.171884, 0.00575288, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jix8l"]
+bg_color = Color(0, 0.145098, 0.270588, 1)
+border_color = Color(0.200187, 0.171884, 0.00575288, 1)
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -112.0
+offset_top = -89.0
+offset_right = -112.0
+offset_bottom = -89.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+script = ExtResource("1_fu7sn")
+
+[node name="Panel" type="Panel" parent="."]
+clip_contents = true
+layout_mode = 1
+anchors_preset = -1
+offset_left = -468.0
+offset_top = -237.0
+offset_right = 689.0
+offset_bottom = 419.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_7vrkn")
+
+[node name="MainButtons" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_top = 60.0
+offset_right = 171.0
+offset_bottom = 226.0
+theme_override_constants/separation = 8
+
+[node name="ButtonStart" type="Button" parent="MainButtons"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_disabled_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/font_hover_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/icon_disabled_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/icon_hover_pressed_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/icon_hover_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/icon_pressed_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/icon_focus_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/icon_normal_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/font_outline_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/font_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/font_focus_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_fonts/font = ExtResource("2_fu7sn")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxEmpty_jix8l")
+theme_override_styles/hover = SubResource("StyleBoxFlat_7vrkn")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_fu7sn")
+theme_override_styles/normal = SubResource("StyleBoxFlat_jix8l")
+text = "Start Game"
+
+[node name="ButtonOptions" type="Button" parent="MainButtons"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_disabled_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/font_hover_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/icon_disabled_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/icon_hover_pressed_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/icon_hover_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/icon_pressed_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/icon_focus_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/icon_normal_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/font_outline_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/font_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/font_focus_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_fonts/font = ExtResource("2_fu7sn")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxEmpty_jix8l")
+theme_override_styles/hover = SubResource("StyleBoxFlat_7vrkn")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_fu7sn")
+theme_override_styles/normal = SubResource("StyleBoxFlat_jix8l")
+text = "Options"
+
+[node name="ButtonExit" type="Button" parent="MainButtons"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_disabled_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/font_hover_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/icon_disabled_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/icon_hover_pressed_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/icon_hover_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/icon_pressed_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/icon_focus_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/icon_normal_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/font_outline_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/font_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/font_focus_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_fonts/font = ExtResource("2_fu7sn")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxEmpty_jix8l")
+theme_override_styles/hover = SubResource("StyleBoxFlat_7vrkn")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_fu7sn")
+theme_override_styles/normal = SubResource("StyleBoxFlat_jix8l")
+text = "Exit
+"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -24.0
+offset_top = -64.0
+offset_right = 203.0
+offset_bottom = -4.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.977792, 0.751594, 0.488269, 1)
+theme_override_fonts/font = ExtResource("2_fu7sn")
+theme_override_font_sizes/font_size = 70
+text = "Starlight"
+
+[node name="OptionsButtons" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="OptionsButtons"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="ButtonBack" type="Button" parent="OptionsButtons"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 249.0
+offset_right = 175.0
+offset_bottom = 299.0
+size_flags_vertical = 3
+theme_override_colors/font_disabled_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/font_hover_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/icon_disabled_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/icon_hover_pressed_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/icon_hover_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/icon_pressed_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/icon_focus_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/icon_normal_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/font_outline_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/font_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/font_focus_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_colors/font_pressed_color = Color(1, 0.756863, 0.0705882, 1)
+theme_override_fonts/font = ExtResource("2_fu7sn")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxEmpty_jix8l")
+theme_override_styles/hover = SubResource("StyleBoxFlat_7vrkn")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_fu7sn")
+theme_override_styles/normal = SubResource("StyleBoxFlat_jix8l")
+text = "Back"
+
+[connection signal="pressed" from="MainButtons/ButtonStart" to="." method="_on_button_start_pressed"]
+[connection signal="pressed" from="MainButtons/ButtonOptions" to="." method="_on_button_options_pressed"]
+[connection signal="pressed" from="MainButtons/ButtonExit" to="." method="_on_button_exit_pressed"]
+[connection signal="pressed" from="OptionsButtons/ButtonBack" to="." method="_on_button_back_pressed"]
