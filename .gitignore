@@ -25,3 +25,10 @@
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# General git
+.gitattributes
+.editorconfig
+
+# Don't export, exports
+exports/
