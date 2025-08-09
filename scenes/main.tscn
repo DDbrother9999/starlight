@@ -658,6 +658,44 @@ collision_mask = 2
 position = Vector2(412, 29)
 shape = SubResource("CircleShape2D_7mycd")
 
+[node name="Coin13" type="Node2D" parent="Coins"]
+position = Vector2(6179, -191)
+script = ExtResource("4_lquwl")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Coins/Coin13"]
+position = Vector2(156, 30)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_4c57u")
+animation = &"GoldCoinSpin"
+autoplay = "GoldCoinSpin"
+
+[node name="Area2D" type="Area2D" parent="Coins/Coin13"]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Coins/Coin13/Area2D"]
+position = Vector2(155, 28)
+shape = SubResource("CircleShape2D_7mycd")
+
+[node name="Coin12" type="Node2D" parent="Coins"]
+position = Vector2(6074, -190)
+script = ExtResource("4_lquwl")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Coins/Coin12"]
+position = Vector2(156, 30)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_4c57u")
+animation = &"GoldCoinSpin"
+autoplay = "GoldCoinSpin"
+
+[node name="Area2D" type="Area2D" parent="Coins/Coin12"]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Coins/Coin12/Area2D"]
+position = Vector2(155, 28)
+shape = SubResource("CircleShape2D_7mycd")
+
 [node name="Coin4" type="Node2D" parent="Coins"]
 position = Vector2(1122, -109)
 script = ExtResource("4_lquwl")
@@ -675,6 +713,82 @@ collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Coins/Coin4/Area2D"]
 position = Vector2(155, 28)
+shape = SubResource("CircleShape2D_7mycd")
+
+[node name="Coin11" type="Node2D" parent="Coins"]
+position = Vector2(5675, -198)
+script = ExtResource("4_lquwl")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Coins/Coin11"]
+position = Vector2(156, 30)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_4c57u")
+animation = &"GoldCoinSpin"
+autoplay = "GoldCoinSpin"
+
+[node name="Area2D" type="Area2D" parent="Coins/Coin11"]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Coins/Coin11/Area2D"]
+position = Vector2(155, 31)
+shape = SubResource("CircleShape2D_7mycd")
+
+[node name="Coin10" type="Node2D" parent="Coins"]
+position = Vector2(4520, -380)
+script = ExtResource("4_lquwl")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Coins/Coin10"]
+position = Vector2(156, 30)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_4c57u")
+animation = &"GoldCoinSpin"
+autoplay = "GoldCoinSpin"
+
+[node name="Area2D" type="Area2D" parent="Coins/Coin10"]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Coins/Coin10/Area2D"]
+position = Vector2(154, 31)
+shape = SubResource("CircleShape2D_7mycd")
+
+[node name="Coin9" type="Node2D" parent="Coins"]
+position = Vector2(3889, -163)
+script = ExtResource("4_lquwl")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Coins/Coin9"]
+position = Vector2(156, 30)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_4c57u")
+animation = &"GoldCoinSpin"
+autoplay = "GoldCoinSpin"
+
+[node name="Area2D" type="Area2D" parent="Coins/Coin9"]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Coins/Coin9/Area2D"]
+position = Vector2(154, 31)
+shape = SubResource("CircleShape2D_7mycd")
+
+[node name="Coin8" type="Node2D" parent="Coins"]
+position = Vector2(3466, -342)
+script = ExtResource("4_lquwl")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Coins/Coin8"]
+position = Vector2(156, 30)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_4c57u")
+animation = &"GoldCoinSpin"
+autoplay = "GoldCoinSpin"
+
+[node name="Area2D" type="Area2D" parent="Coins/Coin8"]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Coins/Coin8/Area2D"]
+position = Vector2(154, 31)
 shape = SubResource("CircleShape2D_7mycd")
 
 [node name="Coin" type="Node2D" parent="Coins"]
@@ -735,10 +849,10 @@ position = Vector2(4243, -68)
 shape = SubResource("RectangleShape2D_4c57u")
 
 [node name="lamps2" parent="." instance=ExtResource("13_ycdy4")]
-position = Vector2(5488, -233)
+position = Vector2(5488, -209)
 
 [node name="lamps" parent="." instance=ExtResource("13_ycdy4")]
-position = Vector2(5217, -233)
+position = Vector2(5228, -209)
 
 [node name="Barriers2" type="Node2D" parent="."]
 position = Vector2(6743, -81)
@@ -778,5 +892,11 @@ disabled = true
 [connection signal="body_entered" from="Coins/Coin5/Area2D" to="Coins/Coin5" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="Coins/Coin2/Area2D" to="Coins/Coin2" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="Coins/Coin3/Area2D" to="Coins/Coin3" method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="Coins/Coin13/Area2D" to="Coins/Coin13" method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="Coins/Coin12/Area2D" to="Coins/Coin12" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="Coins/Coin4/Area2D" to="Coins/Coin4" method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="Coins/Coin11/Area2D" to="Coins/Coin11" method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="Coins/Coin10/Area2D" to="Coins/Coin10" method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="Coins/Coin9/Area2D" to="Coins/Coin9" method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="Coins/Coin8/Area2D" to="Coins/Coin8" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="Coins/Coin/Area2D" to="Coins/Coin" method="_on_area_2d_body_entered"]
