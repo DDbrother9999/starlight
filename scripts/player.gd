@@ -7,6 +7,8 @@ class_name Player extends CharacterBody2D
 @export var air_resistance: float = 600.0
 var gravity: float = 3000.0
 
+@onready var interaction_zone: Area2D = $InteractionZone
+
 func _ready() -> void:
 	add_to_group("players")
 	global_position = GameController.player_position
@@ -21,6 +23,19 @@ func _physics_process(delta: float) -> void:
 	handle_move(input_vector, delta)
 
 	move_and_slide()
+	
+	if Input.is_action_just_pressed("interact"):
+		print("interaction detected")
+		var interactable_objects = interaction_zone.get_overlapping_bodies()
+		if not interactable_objects.is_empty():
+			print("entity detected")
+			var target = interactable_objects[0]
+			print("Player detected object: ", target.name, " of type: ", target.get_class())
+
+
+			if target.has_method("interact"):
+				print("interact")
+				target.interact()
 
 func collect_coin():
 	GameController.collect_coin(1)

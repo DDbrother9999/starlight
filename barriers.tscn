@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://b0ekjm3tpf2mv"]
+
+[ext_resource type="Script" uid="uid://bykf016mpvevm" path="res://barriers.gd" id="1_46bmm"]
+[ext_resource type="Texture2D" uid="uid://c0lbbwej302uk" path="res://Screenshot 2025-08-09 at 9.28.26 AM.png" id="2_bctuh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7uyrn"]
+size = Vector2(20, 186)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_46bmm")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-57.5, 9)
+scale = Vector2(0.884615, 8.11111)
+texture = ExtResource("2_bctuh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-57, 8)
+shape = SubResource("RectangleShape2D_7uyrn")
+disabled = true

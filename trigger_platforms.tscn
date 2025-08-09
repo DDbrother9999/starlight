@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://bdkcr2cvjtofp"]
+
+[ext_resource type="Script" uid="uid://dcrne0w2rmb23" path="res://trigger_platforms.gd" id="1_wn7qv"]
+[ext_resource type="Texture2D" uid="uid://dgkux5jllx0d2" path="res://assets/Screenshot 2025-08-09 at 9.28.26 AM.png" id="2_47ocw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gpnvp"]
+size = Vector2(323, 47)
+
+[node name="Trigger Platforms" type="Node2D"]
+script = ExtResource("1_wn7qv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(222.5, 141.5)
+shape = SubResource("RectangleShape2D_gpnvp")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(221.25, 142)
+scale = Vector2(12.5192, 2.77778)
+texture = ExtResource("2_47ocw")
