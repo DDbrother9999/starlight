@@ -7,5 +7,4 @@ var is_on: bool = true
 func interact() -> void:
 	is_on = not is_on
 	light_2d.enabled = is_on
-
 	EventController.emit_signal("isLightOn", is_on)

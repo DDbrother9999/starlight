@@ -30,9 +30,6 @@ func _physics_process(delta: float) -> void:
 		if not interactable_objects.is_empty():
 			print("entity detected")
 			var target = interactable_objects[0]
-			print("Player detected object: ", target.name, " of type: ", target.get_class())
-
-
 			if target.has_method("interact"):
 				print("interact")
 				target.interact()
