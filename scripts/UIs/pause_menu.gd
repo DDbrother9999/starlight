@@ -12,4 +12,4 @@ func _on_button_restart_pressed() -> void:
 func _on_button_main_menu_pressed() -> void:
 	GameController.SaveGame()
 	get_tree().paused = false
-	get_tree().change_scene_to_file("res://main_menu.tscn")
+	get_tree().change_scene_to_file("res://scenes/main_menu.tscn")
