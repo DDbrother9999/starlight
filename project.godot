@@ -17,9 +17,9 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-EventController="*res://scripts/event_controller.gd"
-GameController="*res://scripts/game_controller.gd"
-Coin="*res://scripts/collectibles/coin.gd"
+GameController="*res://scripts/main/game_controller.gd"
+EventController="*res://scripts/main/event_controller.gd"
+Coin="*res://scripts/interactible/collectibles/coin.gd"
 
 [editor]
 

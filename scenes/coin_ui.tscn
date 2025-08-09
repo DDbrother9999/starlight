@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://d3l01xd5kon3y"]
 
-[ext_resource type="Script" uid="uid://50fowh21026h" path="res://scripts/coinUI.gd" id="1_6boko"]
+[ext_resource type="Script" uid="uid://50fowh21026h" path="res://scripts/UIs/coinUI.gd" id="1_6boko"]
 [ext_resource type="Texture2D" uid="uid://dq7aoxa718mmw" path="res://assets/Coin_Gems/MonedaD.png" id="2_m2hen"]
 
 [node name="CoinUI" type="Control"]

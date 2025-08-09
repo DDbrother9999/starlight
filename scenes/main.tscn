@@ -1,19 +1,19 @@
 [gd_scene load_steps=29 format=4 uid="uid://5gcdhmbfa3mu"]
 
-[ext_resource type="Texture2D" uid="uid://3xswa6p41pdw" path="res://icon.svg" id="1_0xm2m"]
-[ext_resource type="Script" uid="uid://ch34gxdj4ub6g" path="res://main.gd" id="1_272bh"]
-[ext_resource type="Script" uid="uid://bylra0seecmyb" path="res://scripts/player.gd" id="1_h2yge"]
+[ext_resource type="Script" uid="uid://ch34gxdj4ub6g" path="res://scripts/main/main.gd" id="1_272bh"]
+[ext_resource type="Script" uid="uid://bylra0seecmyb" path="res://scripts/main/player.gd" id="1_h2yge"]
 [ext_resource type="Texture2D" uid="uid://d04ncdqnfkrae" path="res://assets/kenney_abstract-platformer/Tilesheet/tilesheet_complete.png" id="1_ig7tw"]
+[ext_resource type="Texture2D" uid="uid://dqduq2xd6qhpn" path="res://assets/icon.svg" id="3_a8y0u"]
 [ext_resource type="Texture2D" uid="uid://dq7aoxa718mmw" path="res://assets/Coin_Gems/MonedaD.png" id="4_1bvp3"]
-[ext_resource type="Script" uid="uid://di0ffowcl7e6t" path="res://scripts/collectibles/coin.gd" id="4_lquwl"]
-[ext_resource type="PackedScene" uid="uid://d3l01xd5kon3y" path="res://scripts/collectibles/scenes/coin_ui.tscn" id="6_7mycd"]
-[ext_resource type="PackedScene" uid="uid://bjy536suxs3su" path="res://pause_menu.tscn" id="8_5vw27"]
-[ext_resource type="Script" uid="uid://dyyxh3nacy5ve" path="res://animatable_body_2d.gd" id="9_4c57u"]
+[ext_resource type="Script" uid="uid://di0ffowcl7e6t" path="res://scripts/interactible/collectibles/coin.gd" id="4_lquwl"]
+[ext_resource type="PackedScene" uid="uid://d3l01xd5kon3y" path="res://scenes/coin_ui.tscn" id="6_7mycd"]
+[ext_resource type="PackedScene" uid="uid://bjy536suxs3su" path="res://scenes/pause_menu.tscn" id="8_5vw27"]
+[ext_resource type="Script" uid="uid://dyyxh3nacy5ve" path="res://scripts/environment/animatable_body_2d.gd" id="9_4c57u"]
 [ext_resource type="Texture2D" uid="uid://15a5lqe3il2e" path="res://assets/kenney_abstract-platformer/PNG/Other/fenceMid.png" id="9_kek77"]
-[ext_resource type="Script" uid="uid://dghqawrb5obvk" path="res://animatable_body_2d_3.gd" id="11_efxa6"]
-[ext_resource type="Script" uid="uid://bykf016mpvevm" path="res://barriers.gd" id="13_w48qg"]
-[ext_resource type="PackedScene" uid="uid://chefiihp46fq0" path="res://lamps.tscn" id="13_ycdy4"]
-[ext_resource type="Texture2D" uid="uid://c0lbbwej302uk" path="res://Screenshot 2025-08-09 at 9.28.26 AM.png" id="14_vivmo"]
+[ext_resource type="Script" uid="uid://dghqawrb5obvk" path="res://scripts/environment/animatable_body_2d_3.gd" id="11_efxa6"]
+[ext_resource type="Script" uid="uid://bykf016mpvevm" path="res://scripts/environment/barriers.gd" id="13_w48qg"]
+[ext_resource type="PackedScene" uid="uid://chefiihp46fq0" path="res://scenes/lamps.tscn" id="13_ycdy4"]
+[ext_resource type="Texture2D" uid="uid://c0lbbwej302uk" path="res://assets/Screenshot 2025-08-09 at 9.28.26 AM.png" id="14_vivmo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0xm2m"]
 size = Vector2(53, 57)
@@ -522,7 +522,7 @@ script = ExtResource("1_h2yge")
 [node name="Sprite2D" type="Sprite2D" parent="Player"]
 position = Vector2(-37.5, -34.3813)
 scale = Vector2(0.414063, 0.459083)
-texture = ExtResource("1_0xm2m")
+texture = ExtResource("3_a8y0u")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 position = Vector2(-36.5, -33.5)
