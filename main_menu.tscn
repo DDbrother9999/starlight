@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://d3wao77bhycu7" path="res://main_menu.gd" id="1_fu7sn"]
 [ext_resource type="FontFile" uid="uid://d3vd82mkw7oam" path="res://assets/Break Mind.otf" id="2_fu7sn"]
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7vrkn"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fu7sn"]
 texture = ExtResource("1_7vrkn")
 modulate_color = Color(0.2757, 0.2757, 0.2757, 1)
 
@@ -24,38 +24,39 @@ border_color = Color(0.200187, 0.171884, 0.00575288, 1)
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -112.0
-offset_top = -89.0
-offset_right = -112.0
-offset_bottom = -89.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 script = ExtResource("1_fu7sn")
 
-[node name="Panel" type="Panel" parent="."]
-clip_contents = true
+[node name="Panel2" type="Panel" parent="."]
+modulate = Color(1, 1, 1, 0.603922)
 layout_mode = 1
-anchors_preset = -1
-offset_left = -468.0
-offset_top = -237.0
-offset_right = 689.0
-offset_bottom = 419.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxTexture_7vrkn")
+theme_override_styles/panel = SubResource("StyleBoxTexture_fu7sn")
+metadata/_edit_use_anchors_ = true
 
 [node name="MainButtons" type="VBoxContainer" parent="."]
-layout_mode = 0
-offset_top = 60.0
-offset_right = 171.0
-offset_bottom = 226.0
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -85.5
+offset_top = -83.0
+offset_right = 85.5
+offset_bottom = 83.0
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_constants/separation = 8
 
 [node name="ButtonStart" type="Button" parent="MainButtons"]
@@ -138,10 +139,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -24.0
-offset_top = -64.0
-offset_right = 203.0
-offset_bottom = -4.0
+offset_left = -145.0
+offset_top = -215.0
+offset_right = 151.0
+offset_bottom = -138.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0.977792, 0.751594, 0.488269, 1)
@@ -150,21 +151,40 @@ theme_override_font_sizes/font_size = 70
 text = "Starlight"
 
 [node name="OptionsButtons" type="Panel" parent="."]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -272.0
+offset_top = -52.5
+offset_right = 272.0
+offset_bottom = 52.5
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="Label" type="Label" parent="OptionsButtons"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+layout_mode = 1
+offset_left = 563.0
+offset_top = 249.0
+offset_right = 603.0
+offset_bottom = 272.0
 
 [node name="ButtonBack" type="Button" parent="OptionsButtons"]
-layout_mode = 0
-offset_left = 4.0
-offset_top = 249.0
-offset_right = 175.0
-offset_bottom = 299.0
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -83.5
+offset_top = -20.0
+offset_right = 87.5
+offset_bottom = 30.0
+grow_horizontal = 2
+grow_vertical = 2
 size_flags_vertical = 3
 theme_override_colors/font_disabled_color = Color(1, 0.756863, 0.0705882, 1)
 theme_override_colors/font_hover_pressed_color = Color(1, 0.756863, 0.0705882, 1)
@@ -186,6 +206,11 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_7vrkn")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_fu7sn")
 theme_override_styles/normal = SubResource("StyleBoxFlat_jix8l")
 text = "Back"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
 
 [connection signal="pressed" from="MainButtons/ButtonStart" to="." method="_on_button_start_pressed"]
 [connection signal="pressed" from="MainButtons/ButtonOptions" to="." method="_on_button_options_pressed"]
